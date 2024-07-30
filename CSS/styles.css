@@ -1,6 +1,7 @@
 body {
   font-family: "Roboto", sans-serif;
   color: #434455;
+  background-color: #ffffff;
 }
 
 ul,
@@ -53,6 +54,10 @@ button {
 .menu-link:hover,
 .menu-link:focus {
   color: #404bbf;
+}
+
+.contacts {
+  font-style: normal;
 }
 
 .contacts-menu {
@@ -138,6 +143,7 @@ button {
   line-height: 1.11;
   letter-spacing: 0.02em;
   text-align: center;
+  text-transform: capitalize
   color: #2e2f42;
 }
 .team-menu {
@@ -169,6 +175,7 @@ button {
   font-size: 36px;
   line-height: 1.11;
   letter-spacing: 0.02em;
+  text-transform: capitalize
   text-align: center;
   color: #2e2f42;
 }
