@@ -39,7 +39,7 @@ p {
   margin-bottom: 0;
 }
 
-image {
+img {
   display: block;
 }
 
@@ -73,10 +73,10 @@ image {
 .header-container {
   display: flex;
   justify-content: space-between;
-  border-bottom: 1px solid #e7e9fc;
 }
 
 .header {
+  border-bottom: 1px solid #e7e9fc;
 }
 .nav {
   display: flex;
