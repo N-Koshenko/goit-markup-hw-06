@@ -1,3 +1,9 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 body {
   font-family: "Roboto", sans-serif;
   color: #434455;
@@ -7,6 +13,9 @@ body {
 ul,
 ol {
   list-style-type: none;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
 }
 
 a {
@@ -18,10 +27,54 @@ button {
   cursor: pointer;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.section {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.container {
+  max-width: 1158px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin: 0 auto;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 /* #region Header */
+.header-container {
+  display: flex;
+  justify-content: space-between;
+}
+
 .header {
 }
 .nav {
+  display: flex;
+  align-items: center;
 }
 .logo {
   font-family: "Raleway", sans-serif;
@@ -38,6 +91,9 @@ button {
 }
 
 .menu {
+  display: flex;
+  gap: 40px;
+  margin-left: 76px;
 }
 
 .menu-item {
@@ -49,6 +105,9 @@ button {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  display: block;
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 
 .menu-link:hover,
@@ -57,10 +116,12 @@ button {
 }
 
 .contacts {
-  font-style: normal;
 }
 
 .contacts-menu {
+  font-style: normal;
+  display: flex;
+  gap: 40px;
 }
 
 .contacts-item {
@@ -72,6 +133,9 @@ button {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
+  display: block;
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 
 .contacts-link:hover,
@@ -83,7 +147,17 @@ button {
 /* #region Hero */
 .hero {
   background-color: #2e2f42;
+  padding-top: 188px;
+  padding-bottom: 188px;
+  display: flex;
 }
+
+.btn-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .hero-title {
   font-weight: 700;
   font-size: 56px;
@@ -91,6 +165,8 @@ button {
   letter-spacing: 0.02em;
   text-align: center;
   color: #fff;
+  max-width: 496px;
+  margin-bottom: 48px;
 }
 
 .hero-btn {
@@ -100,6 +176,11 @@ button {
   letter-spacing: 0.04em;
   color: #fff;
   background-color: #4d5ae5;
+  border: none;
+  border-radius: 4px;
+  padding: 16px 32px;
+  min-width: 169px;
+  height: 56px;
 }
 
 .hero-btn:hover,
@@ -113,10 +194,16 @@ button {
 .feature {
 }
 .feature-title {
+  text-align: center;
 }
 .feature-menu {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 24px;
 }
 .feature-list {
+  width: calc((100% - 3 * 24px) / 4);
 }
 .feature-item {
   font-weight: 500;
@@ -124,6 +211,7 @@ button {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  margin-bottom: 8px;
 }
 .feature-descrip {
   font-weight: 400;
@@ -147,6 +235,7 @@ button {
   color: #2e2f42;
 }
 .team-menu {
+  display: flex;
 }
 .team-list {
   background-color: #fff;
@@ -180,6 +269,8 @@ button {
   color: #2e2f42;
 }
 .portfolio-menu {
+  display: flex;
+  flex-wrap: wrap;
 }
 .portfolio-list {
   background-color: #fff;
@@ -203,6 +294,12 @@ button {
 .footer {
   background-color: #2e2f42;
 }
+
+.ftr-container {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
 .logo {
 }
 .logo-span-footer {
@@ -214,5 +311,7 @@ button {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #f4f4fd;
+  max-width: 264px;
+  margin-top: 16px;
 }
 /* #endregion Footer */
