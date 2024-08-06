@@ -20,6 +20,7 @@ ol {
 
 a {
   text-decoration: none;
+  display: inline-block;
 }
 
 button {
@@ -36,6 +37,10 @@ h6,
 p {
   margin-top: 0;
   margin-bottom: 0;
+}
+
+image {
+  display: block;
 }
 
 .section {
@@ -68,6 +73,7 @@ p {
 .header-container {
   display: flex;
   justify-content: space-between;
+  border-bottom: 1px solid #e7e9fc;
 }
 
 .header {
@@ -80,11 +86,11 @@ p {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 18px;
-
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #4d5ae5;
+  margin-right: 76px;
 }
 .logo-span-header {
   color: #2e2f42;
@@ -93,7 +99,6 @@ p {
 .menu {
   display: flex;
   gap: 40px;
-  margin-left: 76px;
 }
 
 .menu-item {
@@ -293,14 +298,12 @@ p {
 /* #region Footer */
 .footer {
   background-color: #2e2f42;
-}
-
-.ftr-container {
   padding-top: 100px;
   padding-bottom: 100px;
 }
 
 .logo {
+  margin-bottom: 16px;
 }
 .logo-span-footer {
   color: #f4f4fd;
@@ -312,6 +315,5 @@ p {
   letter-spacing: 0.02em;
   color: #f4f4fd;
   max-width: 264px;
-  margin-top: 16px;
 }
 /* #endregion Footer */
