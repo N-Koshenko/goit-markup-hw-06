@@ -1,9 +1,3 @@
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
 body {
   font-family: "Roboto", sans-serif;
   color: #434455;
@@ -20,7 +14,6 @@ ol {
 
 a {
   text-decoration: none;
-  display: inline-block;
 }
 
 button {
@@ -55,6 +48,16 @@ img {
   margin: 0 auto;
 }
 
+.logo {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #4d5ae5;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -82,16 +85,11 @@ img {
   display: flex;
   align-items: center;
 }
-.logo {
-  font-family: "Raleway", sans-serif;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 1.17;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: #4d5ae5;
+
+.hdr-logo {
   margin-right: 76px;
 }
+
 .logo-span-header {
   color: #2e2f42;
 }
@@ -322,7 +320,8 @@ img {
   padding-bottom: 100px;
 }
 
-.logo {
+.ftr-logo {
+  display: inline-block;
   margin-bottom: 16px;
 }
 .logo-span-footer {
