@@ -174,11 +174,11 @@ img {
 /* #endregion Header */
 
 /* #region Hero */
-.hero .hero-container {
+.hero {
   display: flex;
   padding-top: 188px;
   padding-bottom: 188px;
-  justify-content: center;
+  margin: 0 auto;
   max-width: 1440px;
   background-color: rgb(46, 47, 66);
   background-image: linear-gradient(
