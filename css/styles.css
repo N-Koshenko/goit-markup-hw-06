@@ -191,7 +191,7 @@ img {
   background-position: center center;
 }
 
-.btn-container {
+.hero-container {
   display: flex;
   flex-direction: column;
   align-items: center;
