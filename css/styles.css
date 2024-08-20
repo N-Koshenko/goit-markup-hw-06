@@ -563,6 +563,8 @@ img {
   line-height: 1.17;
   letter-spacing: 0.04em;
   color: #8e8f99;
+  display: block;
+  margin-bottom: 4px;
 }
 .form-field {
   position: relative;
@@ -590,5 +592,87 @@ img {
 
 .form-input:focus + .form-icon {
   fill: #4d5ae5;
+}
+.order-form-comment {
+  margin-bottom: 16px;
+}
+
+.comment-form-input {
+  display: block;
+  padding: 8px 16px;
+  resize: none;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 4px;
+  width: 360px;
+  height: 120px;
+  outline: none;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.comment-form-input:focus {
+  border-color: #4d5ae5;
+}
+.comment-form-input::placeholder {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  color: #2e2f4266;
+}
+.form-checkbox {
+  margin-bottom: 24px;
+}
+.checkbox {
+}
+.checkbox-label {
+  cursor: pointer;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  color: #8e8f99;
+}
+.custom-checkbox {
+  display: inline-flex;
+  width: 16px;
+  height: 16px;
+  border-radius: 2px;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  justify-content: center;
+  align-items: center;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  margin-right: 8px;
+}
+.checkbox:checked + .checkbox-label > .custom-checkbox {
+  border-color: transparent;
+  background-color: #404bbf;
+}
+.checkbox-policy-link {
+  line-height: 1.33;
+  text-decoration: underline;
+  color: #4d5ae5;
+}
+.modal-submit-btn {
+  display: block;
+  border: none;
+  border-radius: 4px;
+  padding: 16px 32px;
+  min-width: 169px;
+  height: 56px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+  background: #4d5ae5;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  text-align: center;
+  color: #fff;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  margin: auto;
+}
+
+.modal-submit-btn:hover,
+.modal-submit-btn:focus {
+  background-color: #404bbf;
 }
 /* #endregion Modal window */
