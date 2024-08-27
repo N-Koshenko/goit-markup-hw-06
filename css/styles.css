@@ -55,6 +55,16 @@ img {
   max-width: 296px;
 }
 
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+
+  .team > .container {
+    max-width: 584px;
+  }
+}
+
 .logo {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
@@ -82,7 +92,8 @@ img {
 /* #region Header */
 .header-container {
   display: flex;
-  justify-content: space-between;
+  /* justify-content: space-between; */
+  align-items: center;
 }
 
 .header {
@@ -104,8 +115,9 @@ img {
 }
 
 .nav-menu {
-  display: flex;
-  gap: 40px;
+  display: none;
+  /* display: flex;
+  gap: 40px; */
 }
 
 .nav-item {
@@ -149,6 +161,7 @@ img {
 }
 
 .contacts {
+  display: none;
 }
 
 .contacts-menu {
@@ -177,6 +190,10 @@ img {
 .contacts-link:hover,
 .contacts-link:focus {
   color: #404bbf;
+}
+
+.burger-icon {
+  /* fill: #2f2f37; */
 }
 /* #endregion Header */
 
@@ -282,6 +299,19 @@ img {
   line-height: 1.5;
   letter-spacing: 0.02em;
 }
+@media screen and (min-width: 768px) {
+  .feature-menu {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 72px 24px;
+  }
+  .feature-list {
+    width: calc((100% - 24px) / 2);
+  }
+  .feature-item {
+    text-align: start;
+  }
+}
 /* #endregion Section 1 */
 
 /* #region Section 2 */
@@ -357,6 +387,16 @@ img {
 .team-social-link:focus {
   background-color: #404bbf;
 }
+@media screen and (min-width: 768px) {
+  .team-menu {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 64px 24px;
+  }
+  .team-list {
+    width: calc((100% - 24px) / 2);
+  }
+}
 /* #endregion Section 2 */
 
 /* #region Section 3 */
@@ -426,6 +466,16 @@ img {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
+}
+@media screen and (min-width: 768px) {
+  .portfolio-menu {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 72px 24px;
+  }
+  .portfolio-list {
+    width: calc((100% - 24px) / 2);
+  }
 }
 /* #endregion Section 3 */
 
@@ -783,46 +833,3 @@ img {
   background-color: #404bbf;
 }
 /* #endregion Modal window */
-
-@media screen and (min-width: 768px) {
-  .container {
-    max-width: 768px;
-  }
-
-  .team > .container {
-    max-width: 584px;
-  }
-  /* #region Section 1 */
-  .feature-menu {
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 72px 24px;
-  }
-  .feature-list {
-    width: calc((100% - 24px) / 2);
-  }
-  .feature-item {
-    text-align: start;
-  }
-  /* #endregion Section 1 */
-  /* #region Section 2 */
-  .team-menu {
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 64px 24px;
-  }
-  .team-list {
-    width: calc((100% - 24px) / 2);
-  }
-  /* #endregion Section 2 */
-  /* #region Section 3 */
-  .portfolio-menu {
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 72px 24px;
-  }
-  .portfolio-list {
-    width: calc((100% - 24px) / 2);
-  }
-  /* #endregion Section 3 */
-}
