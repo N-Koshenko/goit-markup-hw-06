@@ -961,7 +961,7 @@ img {
   .ftr-container {
     width: 584px;
     justify-content: flex-start;
-    gap: 72px 16p x;
+    gap: 72px 16px;
   }
 }
 
